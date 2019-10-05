@@ -736,8 +736,8 @@ def get_message(player_list, serverid, h, footer = True, compact = 0):
     # Disclaimer
     if compact == 0 and footer is True:
        answer += '---\n'
-       answer += "I'm still learning so I may have missed some messages, if so ping tama\n"
-       answer += 'Source code (pull requests welcome) : <https://bitbucket.org/tamati25/pokemon-go-discord-raid-rsvp-bot>'
+       answer += "I'm still learning so I may have missed some messages, if so ping @tama#9741.\n"
+       answer += 'Source code (pull requests welcome) : <https://github.com/tama/pogo-discord-raid-bot>'
 
 #    print(len(answer))
     if len(answer) > 2000 and compact < 2:
