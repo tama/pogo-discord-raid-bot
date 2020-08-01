@@ -365,11 +365,11 @@ async def on_guild_channel_delete(channel):
     h = handlers[channel.guild.id]
 
     if h.is_disabled() is True:
-        print("Bot is disabled on this server")
+        print("Bot is disabled on this server.")
         return
 
     if h.should_archive_on_delete() is False:
-        print("Archiving is disabled on this server")
+        print("Archiving is disabled on this server.")
         return
 
     archive_channel_name = h.get_archive_channel_name(channel.name)
@@ -474,7 +474,7 @@ async def update_list(message, message_content, sender):
     if p.from_time is None:
         return None
 
-    # Get the earl>iest available date and look for a session starting around this time
+    # Get the earliest available date and look for a session starting around this time
     session = None
     for s in sessions_list:
         if s > p.from_time:
@@ -736,8 +736,8 @@ def get_message(player_list, serverid, h, footer = True, compact = 0):
     # Disclaimer
     if compact == 0 and footer is True:
        answer += '---\n'
-       answer += "I'm still learning so I may have missed some messages, if so ping tama\n"
-       answer += 'Source code (pull requests welcome) : <https://bitbucket.org/tamati25/pokemon-go-discord-raid-rsvp-bot>'
+       answer += "I'm still learning so I may have missed some messages, if so ping @tama#9741.\n"
+       answer += 'Source code (pull requests welcome) : <https://github.com/tama/pogo-discord-raid-bot>'
 
 #    print(len(answer))
     if len(answer) > 2000 and compact < 2:
